@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadaie 1</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="data.js" ></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header><h1>Zadanie</h1></header>
+
+      <main>
+        <section>
+          <form action="#" id="addingItems">
+            <fieldset>
+              <legend>Tworzenie i stylizacja elementów</legend>
+              <label for="userName">
+                Wpisz swoje imię:
+                <input
+                  type="text"
+                  id="userName"
+                  name="userName"
+                  value=""
+                  maxlength="15"
+                />
+              </label>
+              <label for="userAge">
+                Ile masz lat:
+                <input
+                  type="number"
+                  id="userAge"
+                  name="eserAge"
+                  min="1"
+                  value=""
+                />
+              </label>
+            </fieldset>
+            <div id="displayAddingItems">&nbsp;</div>
+            <fieldset>
+              <legend>Jakie zwierzęta lubisz najbardziej?</legend>
+              <label for="cats">
+                koty
+                <input
+                  type="radio"
+                  id="cats"
+                  name="favoritAnimals"
+                  value="koty"
+                />
+              </label>
+              <label for="dogs">
+                psy
+                <input
+                  type="radio"
+                  id="dogs"
+                  name="favoritAnimals"
+                  value="psy"
+                />
+              </label>
+              <label for="other">
+                wszystkie zwierzaki są ok
+                <input
+                  type="radio"
+                  id="other"
+                  name="favoritAnimals"
+                  value="wszystkie zwierzęta"
+                  checked
+                />
+              </label>
+            </fieldset>
+            <div id="displayFavoriteAnimals">&nbsp;</div>
+            <button type="submit" id="btnAddingItems">Zatwierdź</button>
+          </form>
+        </section>
+        <section>
+          <form action="#" id="calculations">
+            <fieldset>
+              <legend>
+                Sprawdźmy czy umiesz obliczyć sumę i iloraz 2 liczb
+              </legend>
+
+              <label for="num1">
+                Pierwsza liczba:
+                <input type="text" id="num1" name="num1" />
+              </label>
+              <label for="num2">
+                Druga liczba: -5
+                <input
+                  type="range"
+                  id="num2"
+                  name="num2"
+                  min="-5"
+                  max="5"
+                  step="1"
+                />
+                5
+              </label>
+              <div>
+                <p id="displaySum">
+                  Wynik dodawania:
+                  <span id="sumSpan"></span>
+                </p>
+                <p id="displayDivide">
+                  Wynik dzielenia:
+                  <span id="divideSpan"></span>
+                </p>
+              </div>
+            </fieldset>
+            <button type="submit">Zatwierdź</button>
+          </form>
+        </section>
+      </main>
+      <footer><p>&copy; Piekarz XXI w.</p></footer>
+    </div>
+  </body>
+</html>

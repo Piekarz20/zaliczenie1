@@ -1,0 +1,51 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #111;
+  color: #fafafa;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section {
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 5px 1px #70ff70;
+}
+form {
+  min-width: 900px;
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 5px 1px #5d5d5d;
+}
+
+label {
+  display: block;
+  margin: 0.3rem 0;
+}
+fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0.5rem 0;
+  width: 90%;
+}
+fieldset div {
+  flex-basis: 100%;
+}
+#userAge,
+#num1 {
+  width: 3rem;
+}
+.error {
+  color: #f00;
+}
+.success {
+  color: #0f0;
+}
